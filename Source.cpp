@@ -1,12 +1,13 @@
-
-
-
 /***********************************************
 * Name: Schiavo Nicholas
 * Email: schiav55@students.rowan.edu
 ***********************************************
 * Purpose:
-*  This program converts a distance in miles to kilometers, meters, centimeters, and millimeters. Then the program calculates the circuference of a circle given its radius.
+*  This program converts a distance in miles to kilometers, meters, centimeters, and millimeters. 
+*  Then the program calculates the circuference of a circle given its radius.
+*  Then the program converts a temperature in celsius to farenheit.
+*  Then the program converts a time in years to months, days, hours, minutes, and seconds.
+*  Then the program will display my first initial (N) in a grid.
 ***********************************************/
 
 #include <iostream>
@@ -47,7 +48,39 @@ int main()
 	//calculate circumference
 	circumference = 2 * PI * radius;
 	cout << circumference << " is the circumference of the circle. \n\n";
-	cout << "The program has ended. \n";
+	
+
+	double farenheit, celsius;
+	cout << "********************** \n";
+	cout << "This program will convert a temperature in degrees Celsius to Farenheit.\n";
+	cout << "********************** \n\n";
+	cout << "Input the temperature in degrees Celsius.\n";
+	//user inputs temp in Celsius
+	cin >> celsius;
+	//converts celsius to farenheit
+	farenheit = (9 / 5) * celsius + 32;
+	cout << "The temperature is " << farenheit << " degrees Farenheit.\n";
+
+	double years, months, days, hours, minutes, seconds;
+	cout << "********************** \n";
+	cout << "This program will give the number of months, days, hours, minutes, and seconds of a specified amount of years.\n";
+	cout << "********************** \n\n";
+	cout << "Input the number of years \n";
+    cin >> years; // user will input the number of years
+	months = years * 12;
+	days = years * 365.25;
+	hours = days * 24;
+	minutes = hours * 60;
+	seconds = minutes * 60;
+	cout << years << " years is: " << months << " months, or " << days << " days, or " << hours << " hours, or " << minutes << " minutes, or " << seconds << " seconds.\n\n";
+
+	cout << "[*][ ][ ][ ][ ][*] \n";
+	cout << "[*][*][ ][ ][ ][*] \n";
+	cout << "[*][ ][*][ ][ ][*] \n";
+	cout << "[*][ ][ ][*][ ][*] \n";
+	cout << "[*][ ][ ][ ][*][*] \n";
+	cout << "[*][ ][ ][ ][ ][*] \n"; 
+	// i was not quite sure what we were supposed to do in creating a grid, when i looked online things pointed me to 2d arrays and such things we havent done in class
 
 	system("pause");
 
