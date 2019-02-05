@@ -59,7 +59,7 @@ int main()
 	cin >> celsius;
 	//converts celsius to farenheit
 	farenheit = (9 / 5) * celsius + 32;
-	cout << "The temperature is " << farenheit << " degrees Farenheit.\n";
+	cout << "The temperature is " << farenheit << " degrees Farenheit.\n\n";
 
 	double years, months, days, hours, minutes, seconds;
 	cout << "********************** \n";
@@ -81,6 +81,7 @@ int main()
 	cout << "[*][ ][ ][ ][*][*] \n";
 	cout << "[*][ ][ ][ ][ ][*] \n"; 
 	// i was not quite sure what we were supposed to do in creating a grid, when i looked online things pointed me to 2d arrays and such things we havent done in class
+	// i should note that my visual studio keeps telling me "Build failed", but this works fine for me in cpp.sh, and I have no clue why it isnt working in VS.
 
 	system("pause");
 
